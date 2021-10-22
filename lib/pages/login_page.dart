@@ -153,6 +153,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
+            //botão de cadastro com google
             SizedBox(
               height: 10,
             ),
