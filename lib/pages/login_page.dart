@@ -1,3 +1,4 @@
+import 'package:exemplo_tela_login/pages/reset_password_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -64,7 +65,14 @@ class LoginPage extends StatelessWidget {
                   "Recuperar senha",
                   textAlign: TextAlign.right,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ResetPasswordPage(),
+                    ),
+                  );
+                },
               ),
             ),
             SizedBox(
