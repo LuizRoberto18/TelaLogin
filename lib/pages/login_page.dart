@@ -1,4 +1,5 @@
 import 'package:exemplo_tela_login/pages/reset_password_page.dart';
+import 'package:exemplo_tela_login/pages/signup.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -172,7 +173,14 @@ class LoginPage extends StatelessWidget {
                   "Cadastrar-se",
                   textAlign: TextAlign.center,
                 ),
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SignUp(),
+                    ),
+                  ),
+                },
               ),
             ),
           ],
